@@ -1,0 +1,118 @@
+#post-body-content {
+    margin-bottom: 10px;
+}
+
+.iframe-autoresize {
+    width: 100%;
+    border: 0;
+}
+
+#submitdiv .handle-order-higher, #submitdiv .handle-order-lower {
+    display: none;
+}
+
+#uploaded_banner_image_list {
+    list-style: none;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#uploaded_banner_image_list > .banner-image-item {
+    display: inline-flex;
+    margin: 10px;
+    padding: 0;
+}
+
+#uploaded_banner_image_list > .banner-image-item + .banner-image-item {
+}
+
+#uploaded_banner_image_list > .banner-image-item > .banner-image-item-details {
+    margin: 0;
+    padding: 0;
+}
+
+#uploaded_banner_image_list > .banner-image-item > .media-item-tools {
+    margin-left: 8px;
+}
+
+#uploaded_banner_image_list > .banner-image-item > .media-item-tools .media-item-copy-container {
+    margin: 0;
+    display: block;
+}
+
+#uploaded_banner_image_list > .banner-image-item > .media-item-tools .edit-attachment {
+    margin-top: 5px;
+    display: block;
+}
+
+#banner_designer_ui_iframe_wrap {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid rgb(195, 196, 199);
+    background-color: white;
+}
+
+#banner_uploaded_images .uploaded_banner_image_list {
+    margin-bottom: 0;
+}
+
+#banner_image_upload_notice {
+    margin-left: 10px;
+}
+
+
+body.banner-designer-expanded {
+    overflow: hidden;
+}
+
+body.banner-designer-expanded #banner_designer_ui_iframe_wrap {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000000000;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+/*body.banner-designer-expanded #banner_designer_ui_iframe_wrap > iframe {*/
+/*    height: 100% !important;*/
+/*}*/
+
+.collapse-icon {
+    display: none;
+}
+
+body.banner-designer-expanded {
+    overflow: hidden;
+}
+
+body.banner-designer-expanded #banner-designer-expand-collapse-btn > .expand-icon {
+    display: none;  
+}
+
+body.banner-designer-expanded #banner-designer-expand-collapse-btn > .collapse-icon {
+    display: block;
+}
+
+body.banner-designer-expanded #banner-designer-expand-collapse-btn { 
+    position: fixed;
+}
+
+#banner-designer-expand-collapse-btn {
+    background-color: transparent;
+    border: 0;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#banner-designer-expand-collapse-btn:hover {
+
+}
