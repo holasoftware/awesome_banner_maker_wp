@@ -1,4 +1,4 @@
-var bannerDesigner = BannerDesigner.init({
+var bannerDesigner = BannerDesigner.init($("#banner-designer-wrap"), {
     onNewImageCreated: function(blob){
         rpc.call("onNewImageCreated", {
             blob: blob,

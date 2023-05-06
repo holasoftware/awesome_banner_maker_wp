@@ -351,7 +351,6 @@ class Awesome_Banner_Maker_WP_Plugin {
 
         $iframe_html_template = file_get_contents(__DIR__ . '/assets/libs/banner_designer/index.html');
 
-        $plugin_data['iframe_html_template'] = $iframe_html_template;
         $plugin_data['iframe_html_template_context'] = array(
             'banner_designer_css_url' => plugins_url('assets/libs/banner_designer/css/banner_designer.css', __FILE__),
             'btn_css_url' => plugins_url('assets/libs/banner_designer/css/btn.css', __FILE__),

@@ -123,23 +123,23 @@
 
         var postForm = document.getElementById("post");
 
-        var iframe_html = PLUGIN_DATA["iframe_html_template"];
         var context = PLUGIN_DATA["iframe_html_template_context"];
 
-        var before_body_ends = '<script src="' + context.iframe_rpc_url + '" type="text/javascript"></script><script src="' + context.script_wordpress_integration_url + '" type="text/javascript"></script>';
-
-        iframe_html = iframe_html.replace('css/banner_designer.css', context.banner_designer_css_url );
-        iframe_html = iframe_html.replace('css/btn.css', context.btn_css_url );
-        iframe_html = iframe_html.replace('css/pure_css_checkbox.css', context.pure_css_checkbox_css_url );
-        iframe_html = iframe_html.replace('libs/fontawesome-free-5.15.4-web/css/all.css', context.fontawesome_css_url );
-        iframe_html = iframe_html.replace('css/flexboxgrid.css', context.flexboxgrid_css_url );
-        iframe_html = iframe_html.replace('css/forms.css', context.forms_css_url );
-        iframe_html = iframe_html.replace('libs/html2canvas.js', context.html2canvas_url );
-        iframe_html = iframe_html.replace('libs/draggabilly.pkgd.js', context.draggabilly_url );
-        iframe_html = iframe_html.replace('js/banner_designer.js', context.banner_designer_js_url );
-        iframe_html = iframe_html.replace('libs/jquery-3.6.0.js', context.jquery_url );
-        iframe_html = iframe_html.replace('<!-- before body ends -->', before_body_ends );
-
+        var iframe_html = '<!DOCTYPE html><html><head lang="en"><meta charset="UTF-8"><title>Banner maker</title>';
+        iframe_html += '<link rel="stylesheet" href="' + context.fontawesome_css_url + '">';
+        iframe_html += '<link rel="stylesheet" href="' + context.flexboxgrid_css_url + '"/>';
+        iframe_html += '<link rel="stylesheet" href="' + context.forms_css_url +'"/>';
+        iframe_html += '<link rel="stylesheet" href="' + context.btn_css_url  + '"/>';
+        iframe_html += '<link rel="stylesheet" href="' + context.pure_css_checkbox_css_url + '"/>';
+        iframe_html += '<link rel="stylesheet" href="' + context.banner_designer_css_url + '"/>';
+        iframe_html += '</head><body><div id="banner-designer-wrap"></div>';
+        iframe_html += '<script src="' + context.jquery_url + '" type="text/javascript"></script>';
+        iframe_html += '<script>var $ = jQuery.noConflict();</script>';
+        iframe_html += '<script src="' + context.draggabilly_url + '" type="text/javascript"></script>';
+        iframe_html += '<script src="' + context.html2canvas_url + '" type="text/javascript"></script>';
+        iframe_html += '<script src="' + context.banner_designer_js_url + '" type="text/javascript"></script>';
+        iframe_html += '<script src="' + context.iframe_rpc_url + '" type="text/javascript"></script><script src="' + context.script_wordpress_integration_url + '" type="text/javascript"></script>';
+        iframe_html += '</body></html>';
 
         var iframe = createAutoresizeIframe(iframe_html, {
             onLoad: function(){
