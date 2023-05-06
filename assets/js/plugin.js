@@ -136,7 +136,7 @@
         iframe_html = iframe_html.replace('css/forms.css', context.forms_css_url );
         iframe_html = iframe_html.replace('libs/html2canvas.js', context.html2canvas_url );
         iframe_html = iframe_html.replace('libs/draggabilly.pkgd.js', context.draggabilly_url );
-        iframe_html = iframe_html.replace('js/banner_designer.js', context.banner_designer.js );
+        iframe_html = iframe_html.replace('js/banner_designer.js', context.banner_designer_js_url );
         iframe_html = iframe_html.replace('libs/jquery-3.6.0.js', context.jquery_url );
         iframe_html = iframe_html.replace('<!-- before body ends -->', before_body_ends );
 

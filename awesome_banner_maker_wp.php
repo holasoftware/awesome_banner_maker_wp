@@ -361,7 +361,7 @@ class Awesome_Banner_Maker_WP_Plugin {
             'forms_css_url' => plugins_url('assets/libs/banner_designer/css/forms.css', __FILE__),
             'html2canvas_url' => plugins_url('assets/libs/banner_designer/libs/html2canvas.js', __FILE__),
             'draggabilly_url' => plugins_url('assets/libs/banner_designer/libs/draggabilly.pkgd.js', __FILE__),
-            'banner_designer.js' => plugins_url('assets/libs/banner_designer/js/banner_designer.js', __FILE__),
+            'banner_designer_js_url' => plugins_url('assets/libs/banner_designer/js/banner_designer.js', __FILE__),
             'jquery_url' => $jquery_url,
             'script_wordpress_integration_url' => plugins_url('assets/js/script_wordpress_integration.js', __FILE__),
             'iframe_rpc_url' => plugins_url('assets/js/iframe_rpc.js', __FILE__)
